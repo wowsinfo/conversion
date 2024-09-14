@@ -14,7 +14,7 @@ enum class CommanderSkillType {
         get() = name.uppercase()
 }
 
-@Immutable
+@Serializable
 data class CommandSkillInfo(
     val airCarrier: List<List<ShipSkill>>,
     val battleship: List<List<ShipSkill>>,
@@ -53,7 +53,7 @@ data class CommandSkillInfo(
     )
 }
 
-@Immutable
+@Serializable
 data class ShipSkill(
     val name: String,
     val tier: Int,

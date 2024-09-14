@@ -1,6 +1,5 @@
-import androidx.compose.runtime.Immutable
-
-@Immutable
+import kotlinx.serialization.Serializable
+@Serializable
 data class CommanderSkill(
     val logicTrigger: LogicTrigger,
     val canBeLearned: Boolean,
@@ -16,7 +15,7 @@ data class CommanderSkill(
     val fullDescriptions: String = listOfNotNull(skillDescription, partialDescription).joinToString("\n").trim()
 }
 
-@Immutable
+@Serializable
 data class LogicTrigger(
     val burnCount: Double,
     val changePriorityTargetPenalty: Double,

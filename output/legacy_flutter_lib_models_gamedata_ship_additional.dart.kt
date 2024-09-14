@@ -1,4 +1,4 @@
-@Immutable
+@Serializable
 data class ShipAdditional(
     val damage: Int,
     val frags: Double,

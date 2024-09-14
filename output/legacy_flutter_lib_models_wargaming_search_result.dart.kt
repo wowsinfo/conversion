@@ -1,6 +1,4 @@
-import androidx.compose.runtime.Immutable
-
-@Immutable
+import kotlinx.serialization.Serializable
 interface SearchResult : Encodable {
     val displayName: String
     val id: String

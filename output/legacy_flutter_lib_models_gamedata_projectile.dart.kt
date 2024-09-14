@@ -1,4 +1,4 @@
-@Immutable
+@Serializable
 data class Projectile(
     val type: String,
     val nation: String,
@@ -23,7 +23,7 @@ data class Projectile(
     val ignoreClasses: List<String>?
 )
 
-@Immutable
+@Serializable
 data class ArmorPiecingInfo(
     val diameter: Double,
     val weight: Double,

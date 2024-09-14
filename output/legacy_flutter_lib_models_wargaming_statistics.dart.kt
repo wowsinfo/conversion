@@ -1,7 +1,5 @@
-import androidx.compose.runtime.Immutable
-import kotlinx.serialization.Serializable
+import kotlinx.serialization.Serializableimport kotlinx.serialization.Serializable
 
-@Immutable
 @Serializable
 data class ModeStatistics(
     val maxFragsBattle: Int? = null,

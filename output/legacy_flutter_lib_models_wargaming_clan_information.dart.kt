@@ -1,4 +1,4 @@
-@Immutable
+@Serializable
 data class ClanInformation(
     val membersCount: Int?,
     val name: String?,
@@ -19,7 +19,7 @@ data class ClanInformation(
     val description: String?
 )
 
-@Immutable
+@Serializable
 data class ClanMember(
     val role: String?,
     val joinedAt: TimeStampDate?,

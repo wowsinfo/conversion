@@ -1,4 +1,4 @@
-@Immutable
+@Serializable
 data class Alias(
     val alias: String,
 ) {

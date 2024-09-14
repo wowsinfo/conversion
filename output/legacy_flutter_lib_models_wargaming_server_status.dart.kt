@@ -1,6 +1,4 @@
-import androidx.compose.runtime.Immutable
-
-@Immutable
+import kotlinx.serialization.Serializable
 class ServerStatus(private val wows: List<ServerPlayerOnline>) {
     val playersOnline: Int?
         get() = wows.firstOrNull()?.playersOnline
@@ -18,5 +16,5 @@ class ServerStatus(private val wows: List<ServerPlayerOnline>) {
     }
 }
 
-@Immutable
+@Serializable
 data class ServerPlayerOnline(val playersOnline: Int?, val server: String?)

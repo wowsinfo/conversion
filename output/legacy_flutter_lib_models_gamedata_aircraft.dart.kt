@@ -1,4 +1,4 @@
-@Immutable
+@Serializable
 data class Aircraft(
     val type: String,
     val nation: String,
@@ -10,7 +10,7 @@ data class Aircraft(
     val aircraft: AircraftInfo?
 )
 
-@Immutable
+@Serializable
 data class AircraftInfo(
     val restoreTime: Double,
     val maxAircraft: Int,
@@ -25,7 +25,7 @@ data class AircraftInfo(
     val consumables: List<List<Consumable>>?
 )
 
-@Immutable
+@Serializable
 data class Consumable(
     val id: Int,
     val name: String,

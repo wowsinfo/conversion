@@ -5,7 +5,6 @@ import 'package:wowsinfo/models/calculation.dart';
 // With it, we can have better charts and more info about the main player
 
 /// The recent overview of the player.
-@immutable
 class PlayerRecentOverview {
   const PlayerRecentOverview({
     this.pvp,
@@ -41,7 +40,6 @@ class PlayerRecentOverview {
 }
 
 /// The recent PvP data overview.
-@immutable
 class PlayerRecentPvP with Calculation {
   const PlayerRecentPvP({
     this.capturePoints,

@@ -1,6 +1,4 @@
-import androidx.compose.runtime.Immutable
-
-@Immutable
+import kotlinx.serialization.Serializable
 class IDEntry<T : SearchResult> {
     val entry: T
     val server: Int

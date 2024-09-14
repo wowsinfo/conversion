@@ -1,6 +1,5 @@
-import androidx.compose.runtime.Immutable
-
-@Immutable
+import kotlinx.serialization.Serializable
+@Serializable
 data class Modernization(
     val slot: Int,
     val id: Int,

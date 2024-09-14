@@ -1,4 +1,4 @@
-@Immutable
+@Serializable
 data class Ability(
     val nation: String,
     val id: Int,
@@ -12,13 +12,13 @@ data class Ability(
     val alter: Map<String, AbilityAlter>?,
 )
 
-@Immutable
+@Serializable
 data class AbilityAlter(
     val name: String,
     val description: String,
 )
 
-@Immutable
+@Serializable
 data class AbilityInfo(
     val numConsumables: Int?,
     val preparationTime: Double?,

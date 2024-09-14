@@ -35,7 +35,6 @@ class ServiceResult<T> {
 /// The base class of all services.
 ///
 /// It provides a simple way to call the API and decode the json string.
-@immutable
 abstract class BaseService {
   abstract val baseUrl: String
 

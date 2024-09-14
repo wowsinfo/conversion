@@ -1,6 +1,5 @@
-import androidx.compose.runtime.Immutable
-
-@Immutable
+import kotlinx.serialization.Serializable
+@Serializable
 data class PlayerInformation(
     val lastBattleTime: Int? = null,
     val accountId: Int? = null,
@@ -15,7 +14,7 @@ data class PlayerInformation(
     val statsUpdatedAt: Int? = null
 )
 
-@Immutable
+@Serializable
 data class PlayerStatistics(
     val battles: Int? = null,
     val distance: Int? = null,

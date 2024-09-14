@@ -1,5 +1,4 @@
-import androidx.compose.runtime.Immutable
-
+import kotlinx.serialization.Serializable
 enum class WoWsServer(val index: Int) {
     RUSSIA(0),
     EUROPE(1),
@@ -11,7 +10,6 @@ const val domain = arrayOf("ru", "eu", "com", "asia")
 const val prefix = arrayOf("ru", "eu", "na", "asia")
 const val numberDomain = arrayOf("ru.", "", "na.", "asia.")
 
-@Immutable
 class GameServer(private val server: WoWsServer) {
     fun domain(): String = domain[server.index]
     fun prefix(): String = prefix[server.index]

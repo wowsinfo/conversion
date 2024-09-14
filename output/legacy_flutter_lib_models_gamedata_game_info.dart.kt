@@ -1,4 +1,4 @@
-@Immutable
+@Serializable
 data class GameInfo(
     val regions: List<String>,
     val types: List<String>

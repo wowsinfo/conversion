@@ -1,4 +1,4 @@
-@Immutable
+@Serializable
 data class Achievement(
     val icon: String,
     val name: String,

@@ -2,7 +2,6 @@ import kotlinx.datetime.Clock
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.TimeSource
 
-@Immutable
 class TimeStampDate(val timeStamp: Long) {
     private val date = Clock.System.now().toEpochMilliseconds()
     private val dateTimeString = makeDateTimeString(date)
