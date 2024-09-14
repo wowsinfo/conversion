@@ -23,7 +23,7 @@ class CodeTranspiler:
         # print(self.prompts)
 
     def transpile(self, filepath: str):
-        with open(filepath, "r") as file:
+        with open(filepath, "r", encoding="utf-8") as file:
             code = file.read()
 
         llm_response = self._request_transpile(code)
@@ -31,14 +31,14 @@ class CodeTranspiler:
         # print(self.result_language)
         processed_code = self._parse_codeblock(llm_response, self.result_language)
 
-        with open(f"{self.output_dir}{filepath}.{self.output_format}", "w") as file:
+        with open(f"{self.output_dir}{filepath}.{self.output_format}", "w", encoding="utf-8") as file:
             file.write(processed_code)
 
     def _request_transpile(self, code: str) -> str:
         response = self.openai_client.chat.completions.create(
             model="codegeex4-all-9b-q4_k_s",
             # prompt=f"{code}{self.prompts}",
-            max_tokens=1024,
+            max_tokens=102400,
             messages=[
                 {
                     "role": "user",
