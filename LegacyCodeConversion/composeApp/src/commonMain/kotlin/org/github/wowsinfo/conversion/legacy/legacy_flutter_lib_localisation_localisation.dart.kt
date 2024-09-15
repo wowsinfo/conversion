@@ -1,12 +1,3 @@
-import 'dart:convert'
-import 'package:flutter/material.dart'
-import 'package:flutter/services.dart' show rootBundle
-import 'package:flutter_gen/gen_l10n/app_localizations.dart'
-import 'package:intl/intl.dart'
-import 'package:logging/logging.dart'
-import 'package:wowsinfo/extensions/number'
-import 'package:wowsinfo/foundation/helpers/time_tracker'
-import 'java.util.logging.Logger'
 
 /// This repository manages localised strings from the Game Data
 class Localisation {
@@ -125,6 +116,7 @@ class Localisation {
             return rawString
         }
 
-
+    }
+}
 /**
  * This method

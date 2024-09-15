@@ -1,6 +1,3 @@
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import java.io.Serializable
 
 abstract class StoreInterface {
     abstract suspend fun load(): Boolean

@@ -1,4 +1,3 @@
-import kotlinx.serialization.Serializable
 enum class WoWsServer(val index: Int) {
     RUSSIA(0),
     EUROPE(1),

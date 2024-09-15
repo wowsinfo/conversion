@@ -1,6 +1,3 @@
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.test.junit4.ComposeContentTestRule
-import androidx.compose.ui.test.junit4.createComposeRule
 
 class WowsInfoRenderTest {
     private val rule = createComposeRule<ComposeContentTestRule>()

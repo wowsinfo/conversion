@@ -1,11 +1,3 @@
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.FloatingActionButton
-import androidx.compose.material3.Icon
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.navigation.NavHostController
-import com.example.boatnavigator.R
-import com.google.accompanist.pager.ExperimentalPagerApi
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable

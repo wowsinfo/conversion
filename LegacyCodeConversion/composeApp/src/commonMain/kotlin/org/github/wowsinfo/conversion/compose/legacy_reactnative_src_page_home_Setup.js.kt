@@ -1,20 +1,3 @@
-import android.util.Log
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.stringResource
-import com.example.wowsinfo.R
-import com.example.wowsinfo.core.Downloader
-import com.example.wowsinfo.core.NativeSimpleViewHandler
-import com.example.wowsinfo.value.APP
-import com.example.wowsinfo.value.data.getCurrServer
-import com.example.wowsinfo.value.data.setAPILanguage
-import com.example.wowsinfo.value.data.setCurrServer
-import com.example.wowsinfo.value.lang
-import com.example.wowsinfo.value.server.SERVER
 
 @Composable
 fun Setup() {

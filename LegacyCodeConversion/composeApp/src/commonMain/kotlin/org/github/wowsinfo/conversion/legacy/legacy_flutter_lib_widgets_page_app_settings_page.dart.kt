@@ -1,12 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:wowsinfo/foundation/app.dart';
-import 'package:wowsinfo/foundation/helpers/utils.dart';
-import 'package:wowsinfo/localisation/localisation.dart';
-import 'package:wowsinfo/providers/app_provider.dart';
-import 'package:wowsinfo/providers/settings_provider.dart';
-import 'package:wowsinfo/repositories/user_repository.dart';
-import 'package:wowsinfo/widgets/shared/max_width_box.dart';
 
 class AppSettingsPage extends StatefulWidget {
   const AppSettingsPage({Key? key}) : super(key = key);

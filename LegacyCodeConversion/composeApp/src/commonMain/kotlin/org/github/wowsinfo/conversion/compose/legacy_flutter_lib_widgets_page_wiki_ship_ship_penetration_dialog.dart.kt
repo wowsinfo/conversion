@@ -1,24 +1,3 @@
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.stringResource
-import com.github.mikephil.charting.charts.LineChart
-import com.github.mikephil.charting.components.LegendEntry
-import com.github.mikephil.charting.components.XAxis
-import com.github.mikephil.charting.data.Entry
-import com.github.mikephil.charting.data.LineData
-import com.github.mikephil.charting.data.LineDataSet
-import com.github.mikephil.charting.formatter.ValueFormatter
-import com.github.mikephil.charting.utils.ColorTemplate
-import com.wowsinfo.R
-import com.wowsinfo.models.GameData.Ship
-import com.wowsinfo.providers.Wiki.ShipPenetrationProvider
 
 @Composable
 fun ShipPenetrationDialog(

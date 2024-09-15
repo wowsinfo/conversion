@@ -1,4 +1,3 @@
-import org.github.wowsinfo.conversion.legacy.toFixedString
 
 kotlinx.serialization.Serializable
 

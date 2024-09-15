@@ -1,16 +1,3 @@
-import androidx.compose.animation.core.animateFloatAsState
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.MainAxisAlignment
-import androidx.compose.foundation.layout.MainAxisSize
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment.Companion.CenterHorizontally
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.composed
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.unit.dp
-import kotlinx.coroutines.delay
 
 @Composable
 fun PopupColumn(

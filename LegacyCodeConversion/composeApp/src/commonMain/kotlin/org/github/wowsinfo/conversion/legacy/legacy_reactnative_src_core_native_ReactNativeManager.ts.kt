@@ -1,9 +1,3 @@
-import io.ktor.client.*
-import io.ktor.client.plugins.json.*
-import io.ktor.client.request.*
-import io.ktor.http.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 class ApiClient {
     companion object {

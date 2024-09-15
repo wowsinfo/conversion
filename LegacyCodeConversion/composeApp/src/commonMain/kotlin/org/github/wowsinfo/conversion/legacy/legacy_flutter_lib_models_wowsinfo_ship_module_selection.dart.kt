@@ -1,5 +1,3 @@
-import 'package:logging/logging.dart';
-import 'package:wowsinfo/models/wowsinfo/ship_modules.dart';
 
 class ShipModuleSelection {
   private val logger = Logger("ShipModuleSelection")

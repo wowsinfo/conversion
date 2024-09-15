@@ -1,4 +1,3 @@
-import androidx.compose.runtime.Composable
 
 @Composable
 fun getTierLabel(tier: Int): String {

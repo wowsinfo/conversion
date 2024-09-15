@@ -1,10 +1,3 @@
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.ComposeView
-import androidx.core.content.ContextCompat
-import androidx.lifecycle.ViewModelProvider
-import android.app.Activity
-import android.os.Bundle
-import android.util.Log
 
 class Utils {
     private val logger: Logger = Logger("Utils")

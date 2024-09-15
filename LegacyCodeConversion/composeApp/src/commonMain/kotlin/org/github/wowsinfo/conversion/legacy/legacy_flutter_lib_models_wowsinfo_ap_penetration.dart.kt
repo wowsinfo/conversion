@@ -1,4 +1,3 @@
-import kotlin.math.*
 
 class ApPenetration(private val info: ArmorPiecingInfo, private val range: Double, private val verticalAngle: Double) {
     fun calculatePenetration(): ApPenetrationInfo {

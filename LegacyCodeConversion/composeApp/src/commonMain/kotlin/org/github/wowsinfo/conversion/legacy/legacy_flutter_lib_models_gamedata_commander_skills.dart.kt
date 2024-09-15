@@ -1,4 +1,3 @@
-import androidx.compose.foundation.layout.fillMaxSize
 
 enum class CommanderSkillType {
     airCarrier,

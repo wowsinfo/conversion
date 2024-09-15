@@ -1,9 +1,3 @@
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.runtime.*
-import io.github.kaisubr.wowsinfo.localisation.Localisation
-import io.github.kaisubr.wowsinfo.models.gamedata.CommanderSkillType
-import io.github.kaisubr.wowsinfo.models.gamedata.ShipSkill
-import io.github.kaisubr.wowsinfo.repositories.GameRepository
 
 private const val maxPoints = 21
 

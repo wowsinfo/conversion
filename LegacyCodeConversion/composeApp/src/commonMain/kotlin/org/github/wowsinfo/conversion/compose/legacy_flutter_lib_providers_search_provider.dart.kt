@@ -1,17 +1,3 @@
-import androidx.compose.material.Text
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.input.TextFieldValue
-import androidx.compose.ui.viewinterop.AndroidView
-import com.example.domain.models.ClanResult
-import com.example.domain.models.PlayerResult
-import com.example.domain.repositories.UserRepository
-import com.example.presentation.components.SearchTextField
-import com.example.presentation.utils.AppTheme
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
 @Composable
 fun SearchProvider(

@@ -1,27 +1,3 @@
-import android.util.Log
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.IconButton
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
-import com.example.wowsnumberstest.R
-import com.example.wowsnumberstest.core.AppGlobalData
-import com.example.wowsnumberstest.data.getDomain
-import com.example.wowsnumberstest.data.getLocalString
-import com.example.wowsnumberstest.data.setLastLocation
-import com.example.wowsnumberstest.data.toColorResource
-import com.example.wowsnumberstest.ui.theme.WoWsNumberSTheme
-import com.google.accompanist.insets.systemBarsPadding
 
 @Composable
 fun StatisticsScreen(navController: NavController) {

@@ -1,4 +1,3 @@
-import io.ktor.http.*
 
 @Suppress("unused")
 internal object WoWsAPI {

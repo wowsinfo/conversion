@@ -1,5 +1,3 @@
-import 'package:equatable/equatable.dart';
-import 'package:flutter/material.dart';
 
 /// An interface for filtering ships with a [ShipFilter]
 abstract class ShipFilterInterface {

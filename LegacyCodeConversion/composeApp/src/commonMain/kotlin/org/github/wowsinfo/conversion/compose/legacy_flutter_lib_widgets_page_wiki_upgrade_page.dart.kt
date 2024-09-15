@@ -1,25 +1,3 @@
-import android.widget.Toast
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.ColorFilter
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
-import coil.annotation.ExperimentalCoilApi
-import coil.compose.rememberImagePainter
-import com.example.application.R
-import com.example.application.di.ApplicationComponentHolder
-import com.example.application.model.Modernization
-import com.example.application.repository.GameRepository
-import com.example.application.viewmodels.UpgradeViewModel
-import kotlinx.coroutines.runBlocking
-import timber.log.Timber
 
 @ExperimentalCoilApi
 @Composable

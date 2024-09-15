@@ -1,8 +1,3 @@
-import 'package:flutter/foundation.dart';
-import 'package:logging/logging.dart';
-import 'package:wowsinfo/models/wowsinfo/ship_filter.dart';
-import 'package:wowsinfo/providers/wiki/ship_info_provider.dart';
-import 'package:wowsinfo/repositories/game_repository.dart';
 
 class CompareShipProvider with ChangeNotifier {
   final _logger = Logger('CompareShipProvider');

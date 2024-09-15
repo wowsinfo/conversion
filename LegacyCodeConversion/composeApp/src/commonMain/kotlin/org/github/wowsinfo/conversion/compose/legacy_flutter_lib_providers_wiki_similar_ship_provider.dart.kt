@@ -1,13 +1,4 @@
-import 'dart:math'
 
-import androidx.compose.foundation.layout.Column
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import com.example.wowsinfo.extensions.NumberExtensions.toDecimalString
-import com.example.wowsinfo.models.gamedata.Ship
-import com.example.wowsinfo.ui.theme.WowsInfoTheme
-import org.github.wowsinfo.conversion.legacy.toDecimalString
-import org.github.wowsinfo.conversion.legacy.toPercentString
 
 class SimilarShipProvider {
     private val _logger = Logger("SimilarShipProvider")

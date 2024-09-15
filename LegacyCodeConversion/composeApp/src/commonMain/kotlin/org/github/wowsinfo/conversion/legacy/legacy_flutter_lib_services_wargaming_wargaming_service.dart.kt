@@ -1,8 +1,3 @@
-import io.ktor.client.HttpClient
-import io.ktor.client.features.json.JsonFeature
-import io.ktor.client.request.get
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 class WargamingService(private val server: GameServer, private val language: String = "en") {
     companion object {

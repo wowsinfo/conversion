@@ -1,13 +1,3 @@
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.RowScope
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.unit.dp
-import dev.chrisbanes.accompanist.placeholder.PlaceholderHighlight
-import dev.chrisbanes.accompanist.placeholder.shimmer
-import java.util.*
 
 @Composable
 fun Info6Icon(data: Data?, compact: Boolean, topOnly: Boolean) {

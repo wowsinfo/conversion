@@ -1,12 +1,3 @@
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.lightColorScheme
-import androidx.compose.ui.graphics.Color
-import androidx.datastore.core.DataStore
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.flow.first
-import kotlinx.coroutines.launch
 
 class AppProvider(
     private val userRepository: UserRepository,

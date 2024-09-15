@@ -1,5 +1,3 @@
-import kotlinx.coroutines.Deferred
-import org.jetbrains.kotlinx.serialization.KSerializer
 
 sealed interface ServiceResult<T> {
     data class Success<T>(

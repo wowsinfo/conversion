@@ -3,21 +3,6 @@
  *
  * Display Clan information and can access each member's data
  */
-import android.util.Log
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.example.wowsinfo.common.*
-import com.example.wowsinfo.component.*
-import com.example.wowsinfo.core.*
-import com.example.wowsinfo.value.*
 
 @Composable
 fun ClanInfo(info: Info) {

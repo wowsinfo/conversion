@@ -1,36 +1,5 @@
 package com.example.gamedata.ui
 
-import androidx.compose.runtime.Composable
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
-import com.example.gamedata.ui.common.Filter
-import com.example.gamedata.ui.common.Loading
-import com.example.gamedata.ui.home.Menu
-import com.example.gamedata.ui.home.Setup
-import com.example.gamedata.ui.home.Friend
-import com.example.gamedata.ui.home.RS
-import com.example.gamedata.ui.home.Search
-import com.example.gamedata.ui.wiki.Consumable
-import com.example.gamedata.ui.wiki.BasicDetail
-import com.example.gamedata.ui.wiki.CommanderSkill
-import com.example.gamedata.ui.wiki.Achievement
-import com.example.gamedata.ui.wiki.Map
-import com.example.gamedata.ui.wiki.Collection
-import com.example.gamedata.ui.wiki.Warship
-import com.example.gamedata.ui.wiki.WarshipDetail
-import com.example.gamedata.ui.wiki.WarshipFilter
-import com.example.gamedata.ui.wiki.WarshipModule
-import com.example.gamedata.ui.wiki.SimilarGraph
-import com.example.gamedata.ui.player.Statistics
-import com.example.gamedata.ui.player.PlayerAchievement
-import com.example.gamedata.ui.player.Rating
-import com.example.gamedata.ui.player.Graph
-import com.example.gamedata.ui.clan.ClanInfo
-import com.example.gamedata.ui.settings.About
-import com.example.gamedata.ui.settings.License
-import com.example.gamedata.ui.settings.ProVersion
-import com.example.gamedata.ui.settings.Settings
 
 @Composable
 fun MenuScreen() {

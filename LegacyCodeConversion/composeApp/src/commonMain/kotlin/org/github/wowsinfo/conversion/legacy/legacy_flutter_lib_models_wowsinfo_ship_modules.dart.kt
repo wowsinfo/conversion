@@ -1,7 +1,4 @@
-import 'dart:io'
 
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 interface NetworkManager {
     suspend fun <T> performNetworkRequest(request: Request<T>, onSuccess: (response: T) -> Unit, onError: (error: Exception) -> Unit)

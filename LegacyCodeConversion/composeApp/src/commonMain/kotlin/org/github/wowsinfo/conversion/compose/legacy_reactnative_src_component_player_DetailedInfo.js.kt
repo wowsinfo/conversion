@@ -1,12 +1,3 @@
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.Button
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import com.example.jetpackcomposeui.common.InfoLabel
-import com.example.jetpackcomposeui.common.SectionTitle
-import com.example.jetpackcomposeui.data.lang
 
 @Composable
 fun DetailedInfo(data: Data?, more: Boolean, onMorePressed: () -> Unit) {

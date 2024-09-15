@@ -1,12 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:wowsinfo/extensions/list.dart'
-import 'package:wowsinfo/foundation/colours.kt'
-import 'package:wowsinfo/models/wowsinfo/ship_module_selection.kt'
-import 'package:wowsinfo/models/wowsinfo/ship_modules.kt'
-import 'package:wowsinfo/providers/wiki/ship_module_provider.kt'
-import 'package:wowsinfo/localisation/localisation.kt'
-import 'package:wowsinfo/widgets/shared/max_width_box.kt'
 
 void showShipModuleDialog(
   BuildContext context,

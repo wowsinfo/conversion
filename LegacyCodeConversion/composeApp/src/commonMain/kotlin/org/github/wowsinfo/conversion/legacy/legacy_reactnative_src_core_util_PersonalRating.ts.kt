@@ -1,4 +1,3 @@
-import kotlin.math.log10
 
 class RatingCalculator {
     companion object {

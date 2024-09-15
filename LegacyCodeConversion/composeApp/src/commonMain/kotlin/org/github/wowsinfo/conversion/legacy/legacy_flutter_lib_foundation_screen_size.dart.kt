@@ -1,4 +1,3 @@
-import androidx.compose.ui.unit.dp
 
 data class ScreenSize private constructor(
     val context: Context,

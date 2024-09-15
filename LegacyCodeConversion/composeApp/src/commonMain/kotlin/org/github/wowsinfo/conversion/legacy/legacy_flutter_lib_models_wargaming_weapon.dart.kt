@@ -1,4 +1,3 @@
-import android.os.Parcelable
 
 sealed interface Weapon : Parcelable {
     val maxFragsBattle: Int?

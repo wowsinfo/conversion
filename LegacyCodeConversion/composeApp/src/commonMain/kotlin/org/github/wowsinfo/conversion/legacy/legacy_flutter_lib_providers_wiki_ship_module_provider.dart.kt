@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:wowsinfo/models/wowsinfo/ship_module_selection.dart';
-import 'package:wowsinfo/models/wowsinfo/ship_modules.dart';
 
 /// The provider for `ShipModuleDialog`
 class ShipModuleProvider with ChangeNotifier {

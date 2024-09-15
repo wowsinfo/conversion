@@ -1,9 +1,3 @@
-import android.os.Handler
-import android.os.Looper
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
-import androidx.core.os.HandlerCompat
 
 class NativeEvents {
     private val eventEmitter = ReactNativeEventModule()

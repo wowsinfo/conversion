@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-import 'package:wowsinfo/models/calculation.dart';
 
 // TODO: we can save this data in the repository only for the main account
 // With it, we can have better charts and more info about the main player

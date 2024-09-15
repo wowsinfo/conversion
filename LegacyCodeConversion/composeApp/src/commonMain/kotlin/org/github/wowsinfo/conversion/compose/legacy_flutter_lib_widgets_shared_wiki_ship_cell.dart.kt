@@ -1,15 +1,3 @@
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Column
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
-import androidx.navigation.NavController
-import coil.compose.rememberImagePainter
-import com.example.wowsinfo.R
-import com.example.wowsinfo.core.domain.model.Ship
-import com.example.wowsinfo.presentation.screens.ship.ShipScreenViewModel
-import com.example.wowsinfo.presentation.shared.wiki.WikiShipIcon
-import com.example.wowsinfo.presentation.shared.wiki.WikiShipName
 
 @Composable
 fun ShipCell(

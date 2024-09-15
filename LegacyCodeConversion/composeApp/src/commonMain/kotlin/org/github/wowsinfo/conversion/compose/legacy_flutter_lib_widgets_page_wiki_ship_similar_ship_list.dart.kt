@@ -1,13 +1,3 @@
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.ElevatedButton
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
-import com.example.wowsinfo.Routes
-import com.example.wowsinfo.models.GameData.Ship
-import com.example.wowsinfo.utils.Localisation
-import com.example.wowsinfo.widgets.shared.Wiki.ShipCell
 
 @Composable
 fun SimilarShipList(

@@ -1,17 +1,3 @@
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.unit.dp
-import com.wonsikwon.woows.ui.component.LoadingModal
-import com.wonsikwon.woows.ui.component.WikiIcon
-import com.wonsikwon.woows.value.AppGlobalData
-import com.wonsikwon.woows.value.SAVED
-import com.wonsikwon.woows.core.SafeAction
 
 @Composable
 fun ConsumableScreen(upgrade: Boolean = false) {

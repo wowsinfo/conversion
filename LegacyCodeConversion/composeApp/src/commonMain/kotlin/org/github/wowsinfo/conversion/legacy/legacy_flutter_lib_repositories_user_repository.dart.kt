@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:wowsinfo/localisation/localisation.dart';
 
-import 'stores/store_interface.dart';
 
 /// This repository manages the user's settings
 ///

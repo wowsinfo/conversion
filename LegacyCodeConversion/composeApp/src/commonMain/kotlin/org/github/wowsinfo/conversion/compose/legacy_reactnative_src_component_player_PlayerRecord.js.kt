@@ -1,17 +1,3 @@
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.SpanStyle
-import androidx.compose.ui.text.buildAnnotatedString
-import androidx.compose.ui.unit.dp
-import com.example.app.core.AppGlobalData
-import com.example.app.data.SAVED
-import com.example.app.extensions.bestWidth
-import com.example.app.value.lang
-import com.example.app.value.R
 
 @Composable
 fun PlayerRecord(data: Data) {

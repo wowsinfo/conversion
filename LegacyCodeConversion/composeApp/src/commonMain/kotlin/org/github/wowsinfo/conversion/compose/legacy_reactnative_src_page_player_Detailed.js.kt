@@ -1,17 +1,3 @@
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
-import com.example.wowsstats.core.TintColour
-import com.example.wowsstats.core.roundTo
-import com.example.wowsstats.data.AppGlobalData
-import com.example.wowsstats.data.SAVED
-import com.example.wowsstats.ui.component.*
-import com.example.wowsstats.value.lang
 
 @Composable
 fun DetailedScreen(data: Any, navController: NavController?) {

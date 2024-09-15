@@ -1,5 +1,3 @@
-import android.util.Log
-import androidx.compose.runtime.Composable
 
 /**
  * Deep clone an object

@@ -1,13 +1,3 @@
-import androidx.compose.foundation.gestures.scrollBehavior
-import androidx.compose.material.LocalContentAlpha
-import androidx.compose.material.MaterialTheme
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.stringResource
-import com.example.wowsinfo.R
-import io.github.jan.supabase.SupaBaseClient
-import java.util.logging.Logger
 
 class WoWsInfoApp {
     @Composable

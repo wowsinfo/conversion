@@ -1,7 +1,3 @@
-import android.content.Context
-import com.google.gson.Gson
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 class SharedStore {
     companion object {

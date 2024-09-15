@@ -1,8 +1,3 @@
-import io.ktor.client.*
-import io.ktor.client.call.*
-import io.ktor.client.request.*
-import io.ktor.http.*
-import kotlinx.serialization.Serializable
 
 @Serializable
 data class WoWsAPI(
@@ -471,7 +466,6 @@ class DownloaderKt(private val server: Int) {
         }
 
 ###PATH:./wows-encyclopedia-master/ios/AppDelegate.swift
-import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -486,7 +480,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ###PATH:./wows-encyclopedia-master/android/src/main/java/com/example/wows_encyclopedias/MainActivity.kt
 package com.example.wows_encyclopedias
 
-import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity: FlutterActivity() {}
 生成一个README文件，内容包括项目的名称、版本号、主要功能、如何运行项目、安装依赖项和许可信息。确保内容简洁明了，方便他人快速了解和使用本项目。

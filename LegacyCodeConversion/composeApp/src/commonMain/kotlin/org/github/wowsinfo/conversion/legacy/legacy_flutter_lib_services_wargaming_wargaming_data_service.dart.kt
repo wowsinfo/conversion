@@ -1,5 +1,3 @@
-import io.ktor.client.request.get
-import io.ktor.http.HttpStatusCode.Companion.OK
 
 class WargamingDataService(private val server: GameServer, private val language: String = "en") : BaseService() {
     override fun baseUrl(): String {

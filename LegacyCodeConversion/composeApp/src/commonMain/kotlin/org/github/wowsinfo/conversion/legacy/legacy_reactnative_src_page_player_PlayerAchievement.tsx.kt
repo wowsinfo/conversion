@@ -1,12 +1,3 @@
-import React, {useEffect, useState} from 'react'
-import {StyleSheet} from 'react-native'
-import * as Anime from 'react-native-animatable'
-import {SAVED} from '../../value/data'
-import {WoWsInfo, WikiIcon, Touchable} from '../../component'
-import {FlatGrid} from 'react-native-super-grid'
-import {Paragraph} from 'react-native-paper'
-import {SafeAction} from '../../core'
-import {lang} from '../../value/lang'
 
 export const PlayerAchievement = ({data}: any) => {
   const [displayData, setDisplayData] = useState<Array<any>>([])

@@ -1,4 +1,3 @@
-import kotlinx.serialization.Serializable
 @Serializable
 data class Consumable(
     val name: String,

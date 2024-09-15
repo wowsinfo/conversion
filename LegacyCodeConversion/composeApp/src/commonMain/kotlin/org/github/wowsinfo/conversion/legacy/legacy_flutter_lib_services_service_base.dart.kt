@@ -1,7 +1,3 @@
-import 'package:flutter/foundation.dart';
-import 'package:http/http.dart' as http;
-import 'package:logging/logging.dart';
-import 'dart:convert';
 
 /// Create a model by provider a [Map]
 typedef ModelCreator<T> = T? Function(Map<String, dynamic>);

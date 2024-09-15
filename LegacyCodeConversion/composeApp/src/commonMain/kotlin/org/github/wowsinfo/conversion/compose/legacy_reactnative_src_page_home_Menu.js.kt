@@ -1,28 +1,3 @@
-import android.net.Uri
-import android.view.View
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material.*
-import androidx.compose.runtime.*
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.unit.dp
-import com.rzrddev.wowsinfo.core.AppGlobalData
-import com.rzrddev.wowsinfo.core.NativeManager.ReactNativeManager
-import com.rzrddev.wowsinfo.core.NativeManager.QuickAction
-import com.rzrddev.wowsinfo.core.NativeManager.SimpleViewHandler
-import com.rzrddev.wowsinfo.core.data.*
-import com.rzrddev.wowsinfo.core.util.Downloader
-import com.rzrddev.wowsinfo.ui.components.AppName
-import com.rzrddev.wowsinfo.ui.components.SectionTitle
-import com.rzrddev.wowsinfo.ui.theme.WoWsInfo
-import com.rzrddev.wowsinfo.value.lang.R.*
-import io.github.cdimascio.dotenv.Dotenv
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 
 @Composable
 fun Menu(

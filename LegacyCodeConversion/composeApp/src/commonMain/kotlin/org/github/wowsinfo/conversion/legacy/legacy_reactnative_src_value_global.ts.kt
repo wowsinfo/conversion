@@ -1,7 +1,5 @@
 package com.example.myapp
 
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 
 class AppGlobalData {
     companion object {

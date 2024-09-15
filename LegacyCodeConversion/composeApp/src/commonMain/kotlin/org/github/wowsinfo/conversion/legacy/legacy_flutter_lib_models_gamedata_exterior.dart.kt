@@ -1,4 +1,3 @@
-import kotlinx.serialization.Serializable
 @Serializable
 data class Exterior(
     val id: Int,

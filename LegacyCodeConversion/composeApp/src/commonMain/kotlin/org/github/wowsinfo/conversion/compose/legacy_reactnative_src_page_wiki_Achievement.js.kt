@@ -1,14 +1,3 @@
-import android.content.Intent
-import android.os.Bundle
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import com.example.core.SafeAction
-import com.example.data.AppGlobalData
-import com.example.value.Constants.SAVED
-import com.example.wiki_screen.component.WikiIcon
-import com.example.wiki_screen.component.WoWsInfo
 
 class Achievement : Component() {
     private val achievement by lazy { AppGlobalData.get(SAVED.achievement) }

@@ -1,7 +1,3 @@
-import android.os.Parcelable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
 
 class Calculation {
     fun average(value: Double?, base: Double?): Double {

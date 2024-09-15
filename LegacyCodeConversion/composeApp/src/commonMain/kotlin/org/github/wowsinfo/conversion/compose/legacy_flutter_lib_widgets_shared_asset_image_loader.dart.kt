@@ -1,17 +1,3 @@
-import androidx.compose.foundation.Image
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.asImageBitmap
-import androidx.compose.ui.platform.LocalContext
-import coil.imageLoader.retrofit.RetryOnConnectionFailureInterceptor
-import coil.request.ImageRequest
-import com.google.accompanist.placeholder.PlaceholderMode
-import com.google.accompanist.placeholder.material.MaterialPlaceholder
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import okhttp3.OkHttpClient
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class AssetImageLoader(private val name: String, private val placeholder: String? = null) {
     @Composable

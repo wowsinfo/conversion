@@ -1,28 +1,3 @@
-import android.widget.SearchView
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.Close
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.unit.dp
-import com.example.wowsinfo.R
-import com.example.wowsinfo.data.models.search.SearchResult
-import com.example.wowsinfo.helpers.utils.Utils
-import com.example.wowsinfo.ui.theme.WoWsInfoTheme
-import com.example.wowsinfo.viewmodels.SearchViewModel
-import org.koin.androidx.compose.getViewModel
-import kotlin.math.roundToInt
 
 @Composable
 fun SearchPage() {

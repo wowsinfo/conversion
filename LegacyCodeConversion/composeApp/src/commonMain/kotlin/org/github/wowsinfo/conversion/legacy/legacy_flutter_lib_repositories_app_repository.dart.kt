@@ -1,4 +1,3 @@
-import com.example.stores.StoreInterface
 
 class AppRepository private constructor() {
     companion object {

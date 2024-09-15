@@ -1,9 +1,3 @@
-import io.flutter.plugin.common.MethodChannel
-import io.flutter.plugin.common.MethodChannel.Result
-import timber.log.Timber
-import wowsinfo.localisation.Localisation
-import wowsinfo.repositories.UserRepository
-import wowsinfo.widgets.page.AppSettingsPage
 
 class SettingsProvider(private val context: Context) : ChangeNotifier() {
     private val logger = Timber.tag("SettingsProvider")

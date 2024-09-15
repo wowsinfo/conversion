@@ -1,9 +1,3 @@
-import 'package:flutter/material.dart'
-import 'package:logging/logging.dart'
-import 'package:wowsinfo/models/gamedata/ship.dart'
-import 'package:wowsinfo/models/wowsinfo/ship_filter.dart'
-import 'package:wowsinfo/repositories/game_repository.dart'
-import 'package:wowsinfo/widgets/shared/filter_ship_dialog.dart'
 
 /// Provides the entire ship list and filter it with the given [ShipFilter]
 class ShipProvider with ChangeNotifier {

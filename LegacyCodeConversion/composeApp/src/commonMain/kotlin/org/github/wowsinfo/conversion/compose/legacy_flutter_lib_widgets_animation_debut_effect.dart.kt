@@ -1,14 +1,3 @@
-import androidx.compose.animation.core.Curve
-import androidx.compose.animation.core.Curves
-import androidx.compose.animation.core.FadeIn
-import androidx.compose.animation.core.animateFloatAsState
-import androidx.compose.animation.core.tween
-import androidx.compose.foundation.layout.Box
-import androidx.compose.runtime.*
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.composition.LocalAnimationClock
-import androidx.compose.ui.platform.LocalDensity
-import kotlinx.coroutines.delay
 
 @Composable
 fun DebutEffect(

@@ -1,10 +1,3 @@
-import androidx.compose.runtime.*
-import com.yihengquan.wowsinfo.core.AppGlobalData
-import com.yihengquan.wowsinfo.utils.lang
-import io.reactivex.functions.BiFunction
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 
 @Composable
 fun getFirstLaunch(): Boolean {

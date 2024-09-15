@@ -1,4 +1,3 @@
-import kotlinx.serialization.Serializable
 interface SearchResult : Encodable {
     val displayName: String
     val id: String

@@ -1,4 +1,3 @@
-import kotlinx.serialization.Serializable
 class ServerStatus(private val wows: List<ServerPlayerOnline>) {
     val playersOnline: Int?
         get() = wows.firstOrNull()?.playersOnline
