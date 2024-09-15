@@ -1,4 +1,6 @@
-import kotlinx.serialization.Serializableimport kotlinx.serialization.Serializable
+import org.github.wowsinfo.conversion.legacy.toFixedString
+
+kotlinx.serialization.Serializable
 
 @Serializable
 data class ModeStatistics(

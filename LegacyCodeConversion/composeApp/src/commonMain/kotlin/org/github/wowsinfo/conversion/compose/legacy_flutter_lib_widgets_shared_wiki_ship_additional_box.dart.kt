@@ -1,3 +1,6 @@
+import org.github.wowsinfo.conversion.legacy.asPercentString
+import org.github.wowsinfo.conversion.legacy.toDecimalString
+
 @Composable
 fun ShipAdditionalBox(shipAdditional: ShipAdditional) {
     val battles = shipAdditional.battles
