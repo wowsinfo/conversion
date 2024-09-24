@@ -28,17 +28,17 @@ class Backend(ABC):
         """
         Merge the parts back together
         """
-        return "\n".join(parts)
+        return "\n\n".join(parts)
 
-    def default_rules(self, target_lang: str) -> str:
+    def default_rules(self, target_lang: str, original: str) -> str:
         """
         Default rules for the engine, free to update as needed
         """
         return (
-            f"###\nConvert the source code above into {target_lang} language\n"
+            f"###\nConvert the source code above from {original} into {target_lang}\n"
             f"Use ``` to wrap the codeblock\n"
-            f"Output strictly the {target_lang} codeblock without additional explainations\n"
-            f"Ensure the code is formatted with a strict one to one mapping\n"
+            f"Output strictly the `{target_lang}` codeblock without additional explainations\n"
+            f"Ensure the code is strictly one to one mapping from `{original}` to `{target_lang}`\n"
         )
 
     def parse_codeblock(self, text: str) -> str:

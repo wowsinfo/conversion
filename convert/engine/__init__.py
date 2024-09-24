@@ -4,9 +4,9 @@ from dataclasses import dataclass
 
 @dataclass
 class EngineConfig:
-    max_tokens: int
-    temperature: float
-    top_p: float
+    max_tokens: int = 2048
+    temperature: float = 0.2
+    top_p: float = None
 
 
 NO_KEY_NEEDED = "NOT_NEEDED"
@@ -25,7 +25,7 @@ class Engine:
         host_url: str = None,
         config: EngineConfig = None,
     ):
-        self.openai = OpenAI(api_key, base_url=host_url)
+        self.openai = OpenAI(api_key=api_key, base_url=host_url)
         self.model_name = model_name
         self.config = config
 
@@ -34,19 +34,21 @@ class Engine:
     def create_ollama_engine(
         model_name: str,
         host_url: str = "http://localhost:11434/v1",
-        config: EngineConfig = None,
+        config: EngineConfig = EngineConfig(),
     ):
         return Engine(NO_KEY_NEEDED, model_name, host_url, config)
 
     def create_lm_studio_engine(
         model_name: str,
         host_url: str = "http://localhost:1234/v1",
-        config: EngineConfig = None,
+        config: EngineConfig = EngineConfig(),
     ):
         return Engine(NO_KEY_NEEDED, model_name, host_url, config)
 
     def create_chatgpt_engine(
-        api_key: str, model_name: str, config: EngineConfig = None
+        api_key: str,
+        model_name: str,
+        config: EngineConfig = EngineConfig(),
     ):
         return Engine(api_key, model_name, None, config)
 

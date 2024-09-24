@@ -1,5 +1,6 @@
 from ..backend import Backend
 from ..engine import Engine
+from time import sleep
 
 
 class Transpiler:
@@ -28,9 +29,11 @@ class Transpiler:
             prompt = part + rules
             try:
                 converted_parts = self.engine.get_chat_response(prompt)
-            except:
+                sleep(0.1)
+                transpile_parts.append(self.backend.parse_codeblock(converted_parts))
+            except ValueError:
                 converted_parts = "===>>> review manually\n" + part + "\n<<<===\n"
-            transpile_parts.append(converted_parts)
+                transpile_parts.append(converted_parts)
 
         return self.backend.merge_code(transpile_parts)
 
