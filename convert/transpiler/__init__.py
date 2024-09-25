@@ -24,6 +24,23 @@ class Transpiler:
         self.custom_rules = custom_rules
         self.post_processing = post_processing
 
+    def switch_engine(self, engine: Engine):
+        self.engine = engine
+
+    def switch_backend(self, backend: Backend):
+        self.backend = backend
+
+    def add_post_processing(self, post_processing: PostProcessing):
+        self.post_processing.append(post_processing)
+
+    def remove_post_processing(self, post_processing: PostProcessing):
+        self.post_processing.remove(post_processing)
+
+    def update_custom_rules(self, custom_rules: str):
+        self.custom_rules = custom_rules
+
+    # region Transpile
+
     def convert_code(self, code: str) -> str:
         """
         Convert the code from one language to another
@@ -53,3 +70,5 @@ class Transpiler:
         with open(file_path, "r", encoding="utf-8") as file:
             code = file.read()
         return self.convert_code(code)
+
+    # endregion

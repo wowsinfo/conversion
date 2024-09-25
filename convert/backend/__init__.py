@@ -41,7 +41,7 @@ class Backend(ABC):
         #     f"Ensure the code uses technology in `{target_lang}`. "
         # )
 
-        return f"""Translate the provided code from `{original}` to `{target_lang}`. 
+        return f"""\n###\nTranslate the provided code from `{original}` to `{target_lang}`. 
 
 Instructions:
 1. **Code Block**: Wrap the entire output in a code block using triple backticks (```) with no additional explanations, comments, or surrounding text.
