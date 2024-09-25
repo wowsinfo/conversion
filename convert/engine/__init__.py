@@ -5,8 +5,9 @@ from dataclasses import dataclass
 @dataclass
 class EngineConfig:
     max_tokens: int = 2048
-    temperature: float = 0.2
+    temperature: float = 0.3
     top_p: float = None
+    repetition_penalty: float = None
 
 
 NO_KEY_NEEDED = "NOT_NEEDED"
@@ -63,10 +64,20 @@ class Engine:
                     "role": "user",
                     "content": prompt,
                 },
+                # {
+                #     "role": "system",
+                #     "content": rules,
+                # },
+                # {
+                #     "role": "assistant",
+                #     "content": r"```\n{insert code here}\n```",
+                # },
             ],
             max_tokens=self.config.max_tokens,
             temperature=self.config.temperature,
             top_p=self.config.temperature,
+            presence_penalty=self.config.repetition_penalty,
+            frequency_penalty=self.config.repetition_penalty,
         )
         return response.choices[0].message.content.strip()
 

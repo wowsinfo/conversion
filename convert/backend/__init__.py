@@ -35,10 +35,10 @@ class Backend(ABC):
         Default rules for the engine, free to update as needed
         """
         return (
-            f"###\nConvert the source code above from {original} into {target_lang}\n"
-            f"Use ``` to wrap the codeblock\n"
-            f"Output strictly the `{target_lang}` codeblock without additional explainations\n"
-            f"Ensure the code is strictly one to one mapping from `{original}` to `{target_lang}`\n"
+            f"\n###\nConvert the source code above from {original} into {target_lang}. "
+            f"Use ``` to wrap the codeblock. "
+            f"Output strictly the `{target_lang}` codeblock without additional explainations. "
+            f"Ensure the code is strictly one to one mapping from `{original}` to `{target_lang}`. "
         )
 
     def parse_codeblock(self, text: str) -> str:
