@@ -34,12 +34,29 @@ class Backend(ABC):
         """
         Default rules for the engine, free to update as needed
         """
-        return (
-            f"\n###\nConvert the source code above from {original} into {target_lang}. "
-            f"Use ``` to wrap the codeblock. "
-            f"Output strictly the `{target_lang}` codeblock without additional explainations. "
-            f"Ensure the code is strictly one to one mapping from `{original}` to `{target_lang}`. "
-        )
+        # return (
+        #     f"\n###\nConvert the source code above from {original} into {target_lang}. "
+        #     f"Use ``` to wrap the codeblock. "
+        #     f"Output strictly the `{target_lang}` codeblock without additional explainations. "
+        #     f"Ensure the code uses technology in `{target_lang}`. "
+        # )
+
+        return f"""Translate the provided code from `{original}` to `{target_lang}`. 
+
+Instructions:
+1. **Code Block**: Wrap the entire output in a code block using triple backticks (```) with no additional explanations, comments, or surrounding text.
+2. **Technology Conversion**: Ensure all libraries, frameworks, APIs, and language-specific constructs from `{original}` are converted to their direct equivalents or best practices in `{target_lang}`.
+3. **Functional Consistency**: The output must be a fully functional, idiomatic solution in `{target_lang}`. Adapt the architecture or patterns as needed to fit the target language's ecosystem.
+4. **Strict Focus**: Only output the translated `{target_lang}` code without any further commentary or explanation.
+""".strip()
+
+        return f"""Convert the provided source code from `{original}` to `{target_lang}`. 
+- Wrap the entire output in a code block using triple backticks (```) and ensure no extra explanations or comments are included.
+- All technology-specific constructs, libraries, and functions used in `{original}` must be replaced with equivalent constructs in `{target_lang}`.
+- Ensure that any frameworks, libraries, or specific APIs are fully translated to the `{target_lang}` ecosystem.
+- Output **only** the `{target_lang}` code, fully functional in its environment.
+""".strip()
+
 
     def parse_codeblock(self, text: str) -> str:
         """

@@ -5,9 +5,9 @@ from dataclasses import dataclass
 @dataclass
 class EngineConfig:
     max_tokens: int = 2048
-    temperature: float = 0.3
-    top_p: float = None
-    repetition_penalty: float = None
+    temperature: float = 0.1
+    top_p: float = 1
+    repetition_penalty: float = 0
 
 
 NO_KEY_NEEDED = "NOT_NEEDED"
