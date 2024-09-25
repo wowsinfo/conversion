@@ -41,13 +41,13 @@ class Backend(ABC):
         #     f"Ensure the code uses technology in `{target_lang}`. "
         # )
 
-        return f"""\n###\nTranslate the provided code from `{original}` to `{target_lang}`. 
-
+        return f"""\n###\nTranslate the provided code from `{original}` to `{target_lang}`.
 Instructions:
 1. **Code Block**: Wrap the entire output in a code block using triple backticks (```) with no additional explanations, comments, or surrounding text.
-2. **Technology Conversion**: Ensure all libraries, frameworks, APIs, and language-specific constructs from `{original}` are converted to their direct equivalents or best practices in `{target_lang}`.
-3. **Functional Consistency**: The output must be a fully functional, idiomatic solution in `{target_lang}`. Adapt the architecture or patterns as needed to fit the target language's ecosystem.
-4. **Strict Focus**: Only output the translated `{target_lang}` code without any further commentary or explanation.
+2. **Technology Conversion**: Ensure that all libraries, frameworks, APIs, and language-specific constructs from `{original}` are replaced with direct equivalents in `{target_lang}`.
+3. **Functional Code**: The translated code must be fully functional and complete in `{target_lang}`. No placeholders like `// Add your content here` or `// Implement here` are allowed.
+4. **No Incomplete Code**: Every part of the original logic must be converted. Ensure that all methods, functions, and structures are fully implemented and functional without any omissions.
+5. **Strict Focus**: Output only the translated `{target_lang}` code, fully complete and without commentary or explanation.
 """.strip()
 
         return f"""Convert the provided source code from `{original}` to `{target_lang}`. 
