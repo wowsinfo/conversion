@@ -13,19 +13,19 @@ engine = Engine.create_chatgpt_engine(
     "gpt-4o-mini-2024-07-18",
     EngineConfig(max_tokens=None),
 )
-backend = FlutterBackend("Kotlin Multiplatform", tab_size=2)
+backend = FlutterBackend("TypeScript React Native", tab_size=2)
 transpiler = Transpiler(
     engine,
     backend,
-    "Convert any Widgets/Views into Jetpack Compose Views. Ignore all comments and import statements.",
+    "",
     [RemoveImport()],
 )
 
 migration = ProjectMigration(
     r"legacy\flutter\lib", 
     (".dart"), 
-    ".kt", 
-    "flutter"
+    ".ts", 
+    "reactnative"
 )
 
 migration.migrate(transpiler)

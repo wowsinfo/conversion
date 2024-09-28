@@ -1,0 +1,2 @@
+  toJson(): { [key: string]: any };
+}
