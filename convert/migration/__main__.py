@@ -1,5 +1,6 @@
 from ..transpiler import Transpiler
 from ..backend.flutter import FlutterBackend
+from ..backend.react_native import ReactNativeBackend
 from ..engine import Engine, EngineConfig
 from ..post_processing.remove_keyword import RemoveImport
 from convert.key import API_KEY
@@ -13,7 +14,7 @@ engine = Engine.create_chatgpt_engine(
     "gpt-4o-mini-2024-07-18",
     EngineConfig(max_tokens=None),
 )
-backend = FlutterBackend("TypeScript React Native", tab_size=2)
+backend = ReactNativeBackend("Flutter", tab_size=2)
 transpiler = Transpiler(
     engine,
     backend,
@@ -22,10 +23,10 @@ transpiler = Transpiler(
 )
 
 migration = ProjectMigration(
-    r"legacy\flutter\lib", 
-    (".dart"), 
-    ".ts", 
-    "reactnative"
+    r"legacy\reactnative\src", 
+    (".ts", ".tsx", ".js", ".jsx"), 
+    ".dart", 
+    "flutter"
 )
 
 migration.migrate(transpiler)
