@@ -2,8 +2,8 @@ from ..backend.console import ConsoleBackend
 from ..transpiler import Transpiler
 from ..engine import Engine
 
-# engine = Engine.create_lm_studio_engine("codegeex4-all-9b-q4_k_s")
-engine = Engine.create_lm_studio_engine("codellama-7b.q4_0")
+engine = Engine.create_lm_studio_engine("qwen2.5-coder-7b-instruct")
+# engine = Engine.create_lm_studio_engine("codeqwen-1_5-7b-chat-q4_0")
 target_language = input("Enter the target language: ")
 backend = ConsoleBackend(target_language)
 additional_rules = input("Enter additional rules (if any): ")
